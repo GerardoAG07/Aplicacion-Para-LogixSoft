@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimun-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+    
+    <title>Tabla de Clientes</title>
+  
+  
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"></script>
+    <script defer src="../index/clientesTabla/script.js"></script>
+  
+  </head>
+  <body>
+
+
+         <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo nav-link">Logo</a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="../index/clientes/index2.html" class="nav-menu-link nav-link">Mapa</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../index/clientesTabla/index.html" class="nav-menu-link nav-link">Tabla</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Mapa de Calor</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link nav-menu-link_active"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+   <main>
+
+            <!--Tabla de clientes responsive 
+            La tabla responsive genera un Scroll en caso de tener mas filas para evitar
+            la deformidad de la tabla y sus datos
+            Tambien mantiene fija la columna de los clientes en el caso de tener que navegar
+            con el scrol de lado a lado.
+            -->
+            <div class="contenedor__todo">
+                <h1>Tabla de Clientes</h1>
+                <div class="table-container">
+                <table class="table-rwd">
+                    <tr>
+                    <th></th>
+                    <th>Nombre</th>
+                    <th>Latitud</th>
+                    <th>Longitud</th>
+                    </tr>
+                    <tr>
+                    <td>Cliente 01</td>
+                    <td>Gerardo Aguilar</td>
+                    <td>13.705243</td>
+                    <td>-89.24231</td>
+                    </tr>
+                    <tr>
+                    <td>Cliente 02</td>
+                    <td>Antonio Perez</td>
+                    <td>13.696674</td>
+                    <td>-89.197927</td>
+                    
+                    </tr>
+                    <tr>
+                    <td>Cliente 03</td>
+                    <td>Jose Palacios</td>
+                    <td>14.692511</td>
+                    <td>-87.86136</td>
+                    
+                    </tr>
+                    <tr>
+                    <td>Cliente 04</td>
+                    <td>Alejandra Martinez</td>
+                    <td>12.022747</td>
+                    <td>-86.252007</td>
+                    
+                    </tr>
+                    <tr>
+                    <td>Cliente 05</td>
+                    <td>Mario Fernandez</td>
+                    <td>8.103289</td>
+                    <td>-80.596013</td>
+                    
+                    </tr>
+
+                </table>
+             </div>
+        </div>
+        </main>
+  </body>
+</html>

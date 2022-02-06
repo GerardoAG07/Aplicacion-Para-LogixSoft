@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(../imagenes/blue_unclear_image-HD_Widescreen_Wallpapers_2560x1600.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+.header {
+    background-color: #0769e9;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: #034574;
+    transition: 0.5s;
+  }
+  
+  /* TOGGLE */
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    body {
+      padding-top: 70px;
+    }
+  
+    .header {
+      height: 60px;
+    }
+  
+    .logo {
+      font-size: 25px;
+      padding: 0 20px;
+      line-height: 60px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #2c3e50;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+  
+      height: calc(100% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color: #83c5f7;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+* {
+    box-sizing: border-box; }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #333; }
+  
+  h1 {
+    text-align: center;
+    color: #333; }
+  
+  .table-rwd {
+    font-size: .85em;
+    border: 1px solid rgba(181, 213, 144, 0.5);
+    color: #333;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto; }
+    .table-rwd td, .table-rwd th {
+      padding: .8em;
+      border-bottom: 1px solid rgba(181, 213, 144, 0.5); }
+    .table-rwd th {
+      background: #1A8CFF;
+      color: #fff;
+      font-weight: normal;
+      text-align: right; }
+    .table-rwd td {
+      text-align: right; }
+      .table-rwd td:before {
+        
+        color: #1A8CFF; }
+     
+      .table-rwd td:first-of-type {
+        text-align: left; }
+        .table-rwd td:first-of-type:before {
+          content: ""; }
+        .table-rwd td:first-of-type:after {
+          content: ""; }
+    .table-rwd tr:hover {
+      background: rgba(181, 213, 144, 0.2); }
+    .table-rwd tr td:nth-child(2n) {
+      background: rgba(181, 213, 144, 0.2); }
+  
+  .table-container {
+    overflow-x: auto; }
+  
+  .table-rwd {
+    min-width: 900px; }
+    .table-rwd td:first-child {
+      position: absolute;
+      background: #fff;
+      width: 8em; }
+    .table-rwd th:first-child {
+      width: 8em; }
+    .table-rwd tr:hover td:first-child {
+      background: #1A8CFF;
+      color: #fff; }
+    .table-rwd tr:nth-child(2) td:first-child {
+      box-shadow: 0 -2.7em 0 -6px #1A8CFF, -6px -2.7em 0 -6px #1A8CFF; }
